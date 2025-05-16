@@ -18,7 +18,7 @@ const succeeded = () => {
 		return Math.random() < 1
 	}
 	else{
-	return Math.random() < 0.95;
+	return Math.random() < 0.97;
 	}
 }
 const calculate = () => {
