@@ -1,7 +1,7 @@
 {
   "name": "friday_13",
   "version": "0.0.0",
-  "private": true,
+  "homepage": "https://NT-000.github.io/friday_13th",
   "type": "module",
   "scripts": {
     "serve": "vue-cli-service serve",
