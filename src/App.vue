@@ -80,7 +80,7 @@ const calculate = () => {
 		
 		<p v-if="message"><strong>{{ message }}</strong></p>
 		<div class="imgs" v-if="crashed"><img src="/hand_m.png" v-if="failCounter <= 5" class="hl"/><img src="/erlend.png"/><img src="/finger.png" class="hr" v-if="failCounter <= 4"/> <img src="/hl.png" v-if="failCounter >= 10" class="hr"/>
-		<p v-if="errorMessage" :class="{active: crashed}"><strong>{{ errorMessage }}</strong></p>
+		<p v-if="errorMessage"><strong>{{ errorMessage }}</strong></p>
 		</div>
 	</div>
 </template>
@@ -106,14 +106,9 @@ const calculate = () => {
 .hr{
 	transform:rotate(75deg);
 }
-p.active{
-	color: red;
-	font-size: 1.5em;
-	font-weight: bolder;
-	font-family: "Comic Sans MS", cursive;
-}
+
 p{
-	color: black;
+	color: red;
 	font-size: 1.5em;
 	font-weight: bold;
 	font-family: "Comic Sans MS", cursive;
